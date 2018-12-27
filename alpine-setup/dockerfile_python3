@@ -1,0 +1,10 @@
+FROM uuboyscy/alpine:0.1
+
+MAINTAINER uuboyscy
+
+RUN apk add musl-dev gcc g++ \
+    && apk add python3 python3-dev \
+    && pip3 install -U pip
+
+
+CMD python3 -version
